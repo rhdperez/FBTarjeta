@@ -13,7 +13,7 @@ namespace FBTarjeta
     public class AplicationDbContext: DbContext
     {
 
-        DbSet<TarjetaCredito> TarjetaCredito { set; get; } //aca se mapea nuestro modelo con la BD
+        public DbSet<TarjetaCredito> TarjetaCredito { set; get; } //aca se mapea nuestro modelo con la BD
         public AplicationDbContext(DbContextOptions<AplicationDbContext> options): base (options)
         {
 
